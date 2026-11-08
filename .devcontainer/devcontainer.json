@@ -1,0 +1,7 @@
+{
+  "name": "ValoresRD",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+  "forwardPorts": [8080],
+  "postCreateCommand": "dotnet restore src/ValoresRD",
+  "customizations": { "vscode": { "extensions": ["ms-dotnettools.csharp"] } }
+}

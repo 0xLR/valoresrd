@@ -1,0 +1,352 @@
+
+body {
+  padding-top: 54px;
+  background-color: #0f2440;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.bluetheme {
+  background-color: #0f2440;
+  color: #ffffff;
+}
+#push {
+  min-height: 100px;
+}
+
+.greybkgd {
+  background-color: #f3f3f3;
+}
+
+.navybkgd {
+  background-color: #0f2440;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.calculationResults{
+  margin-top: 20px;
+}
+
+#pageBody {
+  width: 100%;
+  /*margin-top: 20px;*/
+}
+select {
+  border-radius: 3px;
+  border: 1px inset;
+  /*border: 1px inset;*/
+}
+
+#fechaPicker {
+  text-align: right;
+}
+
+#valorNominalInput {
+  text-align: right;
+}
+
+.divider {
+  min-height: 100px;
+}
+
+#ResultsDiv{
+  margin-bottom: 30px;
+}
+
+#valor_transadoRadio{
+  margin-bottom: 50px;
+}
+
+.userInput{
+  width: 50%;
+  text-align: right;
+  float: right;   
+}
+
+.userRadio{
+  display: inline-block;
+}
+
+input {
+  margin: 0px;  
+  border-radius: 3px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-bottom: 1px solid #DDD;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+  /*border: 1px inset;*/
+}
+
+table {
+  width: 100%;
+  /*border-collapse:collapse;
+  border:1px solid #000000;*/
+}
+
+table th{
+  /*border:1px solid #000000;*/
+  text-align: center;
+}
+
+.propertyLabel {
+  font-weight:900;
+}
+
+#tableOfPayments tr:nth-child(even)
+{
+  background-color: #f2f2f2;
+}
+
+#tableOfPayments tr td:nth-child(1) {
+  text-align: center;
+}
+
+#tableOfPayments tr td:nth-child(2) {
+  text-align: center;
+}
+
+#tableOfPayments tr td:nth-child(3) {
+  text-align: center;
+}
+
+#tableOfPayments tr td:nth-child(4) {
+  text-align: center;
+}
+
+#tableOfPayments tr td:nth-child(5) {
+  text-align: right;
+}
+
+#tableOfPayments tr td:nth-child(6) {
+  text-align: right;
+}
+
+#tableOfPayments thead {
+  background-color: #0f2440;
+  color: #ffffff;
+  text-align: center;
+}
+
+#tableOfPayments tr:hover {
+  background-color: #dddddd;
+}
+
+#ResultsTable tr:hover {
+  background-color: #dddddd;
+}
+
+#tableOfPayments {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-collapse:  collapse;
+}
+
+#ResultsTable td, #tableOfPayments td, #tableOfPayments th {  
+  border-bottom: 1px solid #dddddd;  
+}
+
+thead {
+  white-space: nowrap;
+}
+
+.show-inline {
+  display: inline-block;
+}
+
+.inputs-inline {
+  width:50%;
+  float: right;
+}
+
+
+#calcularHeading {
+  margin-bottom: 1.5rem;
+}
+
+.userOptions{
+  padding: 0px;
+}
+
+@media print {
+  #firstColumn {
+  display:none;
+  visibility: hidden
+  }
+  #ResultsDiv {
+  display: block;
+  visibility: visible;
+  width:100%;
+  height:100%;
+  border: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+ }
+   
+}
+
+.preloader-2 {
+  /*margin: 120px auto 0;*/
+}
+
+#splashscreen {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;*/
+  width: 100%;
+  padding-top: 25%;
+  /*margin-top: 25%;*/
+  background-color: #0f2440;
+  /*z-index: 99;*/
+}
+
+.preloader-2 {
+  color: #fff;
+  margin: 5px 0;
+  text-transform: uppercase;
+  text-align: center;  
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.preloader-1 .line {
+  width: 1px;
+  height: 12px;
+  background: #fff;
+  margin: 0 1px;
+  display: inline-block;
+  animation: opacity-1 1000ms infinite ease-in-out;
+}
+
+.preloader-2 .line {
+  width: 1px;
+  height: 26px;
+  background: #fff;
+  margin: 0 1px;
+  display: inline-block;
+  animation: opacity-2 1000ms infinite ease-in-out;
+}
+
+.preloader-1 .line-1, .preloader-2 .line-1 { animation-delay: 800ms; }
+.preloader-1 .line-2, .preloader-2 .line-2 { animation-delay: 600ms; }
+.preloader-1 .line-3, .preloader-2 .line-3 { animation-delay: 400ms; }
+.preloader-1 .line-4, .preloader-2 .line-4 { animation-delay: 200ms; }
+.preloader-1 .line-6, .preloader-2 .line-6 { animation-delay: 200ms; }
+.preloader-1 .line-7, .preloader-2 .line-7 { animation-delay: 400ms; }
+.preloader-1 .line-8, .preloader-2 .line-8 { animation-delay: 600ms; }
+.preloader-1 .line-9, .preloader-2 .line-9 { animation-delay: 800ms; }
+
+@keyframes opacity-1 { 
+  0% { 
+    opacity: 1;
+  }
+  50% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }  
+}
+
+@keyframes opacity-2 { 
+  0% { 
+    opacity: 1;
+    height: 15px;
+  }
+  50% { 
+    opacity: 0;
+    height: 12px;
+  }
+  100% { 
+    opacity: 1;
+    height: 15px;
+  }  
+}
+
+.loader  {
+  animation: rotate 1s infinite;  
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  left: 47%;
+}
+
+.loader:before,
+.loader:after {   
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 20px;  
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1s infinite;  
+  background-color: #cb2025;
+  box-shadow: 30px 0 0 #f8b334;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite; 
+  background-color: #00a096;
+  box-shadow: 30px 0 0 #97bf0d;
+}
+
+@keyframes rotate {
+  0% { 
+    -webkit-transform: rotate(0deg) scale(0.8); 
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% { 
+    -webkit-transform: rotate(360deg) scale(1.2); 
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% { 
+    -webkit-transform: rotate(720deg) scale(0.8); 
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #f8b334;
+  }
+  50% {
+    box-shadow: 0 0 0 #f8b334;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+  50% {
+    box-shadow: 0 0 0 #97bf0d;
+    margin-top: -20px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #97bf0d;
+    margin-top: 0;
+  }
+}
+[hidden] { display: none !important; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid #336da8; outline-offset: 2px; }
+#status { color: #a13c2f; }
+@media (max-width: 400px) { .card-body { padding: 1rem; } .userRadio { font-size: .75rem; } }

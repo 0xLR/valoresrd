@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>ValoresRD</title>
+  
+  <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+  <link href="css/lux.min.css" rel="stylesheet">
+
+  <link href="css/vrd.css" rel="stylesheet">    
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bluetheme">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ValoresRD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">          
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="contactLink">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container" id="pageBody">
+    <div id="splashscreen">
+        <div class="preloader-2">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+            <span class="line line-4"></span>
+            <span class="line line-5"></span>
+            <span class="line line-6"></span>
+            <span class="line line-7"></span>
+            <span class="line line-8"></span>
+            <span class="line line-9"></span>
+            <div>ValoresRD</div>
+          </div>
+    </div>
+  </div>  
+  <section class="greybkgd initialHidden" id="mainSection" hidden>
+    <div class="container">    
+    <div class="row initialHidden" id="mainContent" hidden>
+      <div class="offset-lg-2 offset-md-2 col-lg-8 col-md-8 col-sm-12 col-xs-12" id="firstColumn">
+        <div class="card h-100">
+          <div class="card-body text-primary">
+            <br>
+            <h4 class="card-title">Instrumento</h4><p id="status" role="status" aria-live="polite"></p>
+            <div>
+              <div>
+                <label for="emisorDrop" class="show-inline">Emisor</label>
+                <select autocomplete="off" class="show-inline inputs-inline" id="emisorDrop" disabled required>
+                  <option id="emisorPlaceHolder" disabled selected>Cargando</option>
+                  <option id="central">Banco Central</option>
+                  <option id="hacienda">Ministerio de Hacienda</option>
+                </select>
+              </div>
+              <br>
+              <div>
+                <label for="titulo" class="show-inline">Título</label>
+                <select autocomplete="off" class="show-inline inputs-inline" id="titulo" disabled required>
+                  <option id="tituloPlaceHolder" disabled selected>Cargando</option>
+                </select>
+              </div>
+              <br>
+              <div>
+                <label for="fechaPicker" class="show-inline">Fecha</label>
+                <input class="show-inline inputs-inline" type="date" id="fechaPicker">
+              </div>
+              <br>
+              <div>
+                <label for="valorNominalInput" class="show-inline">Valor Nominal</label>
+                <input autocomplete="off" type="number" id="valorNominalInput" class="show-inline inputs-inline" name="valor_nominal" min="10000" step="10000" style="text-align: right">
+              </div>
+              <br>
+              <div>
+                <h4 class="card-title" id="calcularHeading">Calcular por:</h4>
+              </div>
+                <div>
+                  <form>
+                    <label class="userRadio"><input type="radio" name="metodo" id="tasaRadio" value="tasa" checked="checked"> Tasa</label>
+                    <input autocomplete="off" class="userInput" type="number" id="tasaInput" min="0" max="50" step="0.01">
+                    <br>
+                    <br>
+                    <label class="userRadio"><input type="radio" name="metodo" id="precio_limpioRadio" value="precio_limpio"> Precio Limpio</label>                    
+                    <input autocomplete="off" class="userInput" type="number" id="precio_limpioInput" min="70" max="199" step="1" disabled>
+                    <br>
+                    <br>
+                    <label class="userRadio"><input type="radio" name="metodo" id="valor_transadoRadio" value="valor_transado"> Valor Transado</label>
+                    <input autocomplete="off" class="userInput" type="number" id="valor_transadoInput" min="0" step="1" disabled>  
+                  </form>                  
+                </div>              
+              <br>
+              <div>
+                <button autocomplete="off" type="button" class="btn btn-block bluetheme" id="calcularButton" disabled>Calcular</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+  </div>
+</div>
+</section>
+
+<section class="greybkgd" id="ResultsSection">
+  <div class="container">
+      <div class="row" id="loaderDiv" hidden>
+          <div class="loader" id="loader"></div>
+      </div>
+  <div class="row" id="ResultsContent" hidden>
+    <div class="offset-lg-2 offset-md-2 col-lg-8 col-md-8 col-sm-12 col-xs-12 calculationResults" id="ResultsColumn">
+      <div class="card h-100">
+        <div class="card-body text-primary">
+          <h4 class="card-title">Resultados</h4>          
+          <div id="ResultsDiv">              
+          </div>
+          <div class="hidden-lg hidden-md">
+              <button type="button" class="btn bluetheme btn-block" id="pagosButton" hidden>Tabla de Pagos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="greybkgd" id="tableSection">
+  <div class="container">
+    
+    <div class="row" id="tableContent" hidden>
+      <div class="offset-lg-2 offset-md-2 col-lg-8 col-md-8 col-sm-12 col-xs-12 calculationResults" id="tableColumn">
+          <div class="card h-100">
+              <div class="card-body text-primary">
+                <h4 class="card-title">Pagos</h4>
+                  <div id="TableDiv" class="table-responsive">
+                  </div>
+                  <br>
+                  <div class="hidden-lg hidden-md">
+                      <button type="button" class="btn bluetheme btn-block returnButton" hidden>Volver</button>
+                  </div>                                    
+              </div>
+              <div class="hidden-lg hidden-md">
+                  <button type="button" class="btn bluetheme btn-block returnButton" hidden>Volver</button>
+              </div>
+      </div>
+      </div>
+
+    </div>
+    
+  </div>
+</section>  
+
+  
+  <footer class="py-5 bluetheme initialHidden" hidden>
+    <div class="container-fluid">
+      <p class="m-0 text-center text-white">Copyright &copy; ValoresRD.net 2018</p>
+    </div>
+    
+  </footer>
+
+  <script src="app.js"></script></body>
+</html>
+

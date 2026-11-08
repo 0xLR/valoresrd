@@ -1,0 +1,1122 @@
+[
+  {
+    "Id": "bc-DO1002247224",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002247224",
+      "Alias": "DO1002247224",
+      "Type": "Certificado",
+      "IssueDate": "2010-07-21",
+      "MaturityDate": "2017-07-21",
+      "CouponRate": 14.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002212921",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002212921",
+      "Alias": "DO1002212921",
+      "Type": "Nota",
+      "IssueDate": "2014-07-28",
+      "MaturityDate": "2017-07-28",
+      "CouponRate": 9.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002247422",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002247422",
+      "Alias": "DO1002247422",
+      "Type": "Certificado",
+      "IssueDate": "2010-09-08",
+      "MaturityDate": "2017-09-08",
+      "CouponRate": 14.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002247026",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002247026",
+      "Alias": "DO1002247026",
+      "Type": "Certificado",
+      "IssueDate": "2010-10-06",
+      "MaturityDate": "2017-10-06",
+      "CouponRate": 14.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002248925",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002248925",
+      "Alias": "DO1002248925",
+      "Type": "Certificado",
+      "IssueDate": "2012-10-13",
+      "MaturityDate": "2017-10-13",
+      "CouponRate": 12.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002251424",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002251424",
+      "Alias": "DO1002251424",
+      "Type": "Certificado",
+      "IssueDate": "2012-12-22",
+      "MaturityDate": "2017-12-22",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002249824",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002249824",
+      "Alias": "DO1002249824",
+      "Type": "Certificado",
+      "IssueDate": "2013-01-05",
+      "MaturityDate": "2018-01-05",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002213523",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002213523",
+      "Alias": "DO1002213523",
+      "Type": "Certificado",
+      "IssueDate": "2015-01-12",
+      "MaturityDate": "2018-01-12",
+      "CouponRate": 9.25,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002213622",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002213622",
+      "Alias": "DO1002213622",
+      "Type": "Nota",
+      "IssueDate": "2015-01-19",
+      "MaturityDate": "2018-01-19",
+      "CouponRate": 9.25,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002229321",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002229321",
+      "Alias": "DO1002229321",
+      "Type": "Certificado",
+      "IssueDate": "2011-01-19",
+      "MaturityDate": "2018-01-19",
+      "CouponRate": 14.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002230121",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002230121",
+      "Alias": "DO1002230121",
+      "Type": "Certificado",
+      "IssueDate": "2011-02-09",
+      "MaturityDate": "2018-02-09",
+      "CouponRate": 14.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002230527",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002230527",
+      "Alias": "DO1002230527",
+      "Type": "Nota",
+      "IssueDate": "2011-02-23",
+      "MaturityDate": "2018-02-23",
+      "CouponRate": 14.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002231822",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002231822",
+      "Alias": "DO1002231822",
+      "Type": "Certificado",
+      "IssueDate": "2011-03-30",
+      "MaturityDate": "2018-03-30",
+      "CouponRate": 14.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002232523",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002232523",
+      "Alias": "DO1002232523",
+      "Type": "Certificado",
+      "IssueDate": "2011-05-18",
+      "MaturityDate": "2018-05-18",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002232622",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002232622",
+      "Alias": "DO1002232622",
+      "Type": "Certificado",
+      "IssueDate": "2011-06-01",
+      "MaturityDate": "2018-06-01",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002232721",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002232721",
+      "Alias": "DO1002232721",
+      "Type": "Certificado",
+      "IssueDate": "2011-06-29",
+      "MaturityDate": "2018-06-29",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002235823",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002235823",
+      "Alias": "DO1002235823",
+      "Type": "Certificado",
+      "IssueDate": "2011-07-13",
+      "MaturityDate": "2018-07-13",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002254626",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002254626",
+      "Alias": "DO1002254626",
+      "Type": "Nota",
+      "IssueDate": "2013-08-24",
+      "MaturityDate": "2018-08-24",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002237027",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002237027",
+      "Alias": "DO1002237027",
+      "Type": "Certificado",
+      "IssueDate": "2011-10-05",
+      "MaturityDate": "2018-10-05",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002239825",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002239825",
+      "Alias": "DO1002239825",
+      "Type": "Certificado",
+      "IssueDate": "2011-11-02",
+      "MaturityDate": "2018-11-02",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002240229",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002240229",
+      "Alias": "DO1002240229",
+      "Type": "Certificado",
+      "IssueDate": "2012-01-11",
+      "MaturityDate": "2019-01-11",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002260524",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002260524",
+      "Alias": "DO1002260524",
+      "Type": "Nota",
+      "IssueDate": "2014-02-22",
+      "MaturityDate": "2019-02-22",
+      "CouponRate": 12.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002243124",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002243124",
+      "Alias": "DO1002243124",
+      "Type": "Certificado",
+      "IssueDate": "2012-03-15",
+      "MaturityDate": "2019-03-15",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002260722",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002260722",
+      "Alias": "DO1002260722",
+      "Type": "Nota",
+      "IssueDate": "2014-04-05",
+      "MaturityDate": "2019-04-05",
+      "CouponRate": 12.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002243223",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002243223",
+      "Alias": "DO1002243223",
+      "Type": "Certificado",
+      "IssueDate": "2012-04-19",
+      "MaturityDate": "2019-04-19",
+      "CouponRate": 15.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002243926",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002243926",
+      "Alias": "DO1002243926",
+      "Type": "Certificado",
+      "IssueDate": "2012-07-05",
+      "MaturityDate": "2019-07-05",
+      "CouponRate": 15.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002249022",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002249022",
+      "Alias": "DO1002249022",
+      "Type": "Certificado",
+      "IssueDate": "2012-10-18",
+      "MaturityDate": "2019-10-18",
+      "CouponRate": 14.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002249923",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002249923",
+      "Alias": "DO1002249923",
+      "Type": "Certificado",
+      "IssueDate": "2013-01-03",
+      "MaturityDate": "2020-01-03",
+      "CouponRate": 13.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002213424",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002213424",
+      "Alias": "DO1002213424",
+      "Type": "Certificado",
+      "IssueDate": "2015-01-10",
+      "MaturityDate": "2020-01-10",
+      "CouponRate": 10.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002213721",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002213721",
+      "Alias": "DO1002213721",
+      "Type": "Nota",
+      "IssueDate": "2015-01-17",
+      "MaturityDate": "2020-01-17",
+      "CouponRate": 10.5,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002251523",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002251523",
+      "Alias": "DO1002251523",
+      "Type": "Certificado",
+      "IssueDate": "2013-03-20",
+      "MaturityDate": "2020-03-20",
+      "CouponRate": 13.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002214422",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002214422",
+      "Alias": "DO1002214422",
+      "Type": "Nota",
+      "IssueDate": "2015-07-17",
+      "MaturityDate": "2020-07-17",
+      "CouponRate": 10.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002253727",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002253727",
+      "Alias": "DO1002253727",
+      "Type": "Certificado",
+      "IssueDate": "2013-08-07",
+      "MaturityDate": "2020-08-07",
+      "CouponRate": 13.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002257728",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002257728",
+      "Alias": "DO1002257728",
+      "Type": "Certificado",
+      "IssueDate": "2014-01-08",
+      "MaturityDate": "2021-01-08",
+      "CouponRate": 14.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002212020",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002212020",
+      "Alias": "DO1002212020",
+      "Type": "Certificado",
+      "IssueDate": "2014-04-30",
+      "MaturityDate": "2021-04-30",
+      "CouponRate": 14.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002212822",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002212822",
+      "Alias": "DO1002212822",
+      "Type": "Nota",
+      "IssueDate": "2014-07-30",
+      "MaturityDate": "2021-07-30",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002216526",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002216526",
+      "Alias": "DO1002216526",
+      "Type": "Nota",
+      "IssueDate": "2016-09-10",
+      "MaturityDate": "2021-09-10",
+      "CouponRate": 10.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 5
+    }
+  },
+  {
+    "Id": "bc-DO1002213325",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002213325",
+      "Alias": "DO1002213325",
+      "Type": "Certificado",
+      "IssueDate": "2015-01-07",
+      "MaturityDate": "2022-01-07",
+      "CouponRate": 12.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002213820",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002213820",
+      "Alias": "DO1002213820",
+      "Type": "Nota",
+      "IssueDate": "2015-01-20",
+      "MaturityDate": "2022-01-20",
+      "CouponRate": 12.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002213929",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002213929",
+      "Alias": "DO1002213929",
+      "Type": "Nota",
+      "IssueDate": "2015-03-11",
+      "MaturityDate": "2022-03-11",
+      "CouponRate": 12.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002214521",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002214521",
+      "Alias": "DO1002214521",
+      "Type": "Nota",
+      "IssueDate": "2015-07-15",
+      "MaturityDate": "2022-07-15",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002215726",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002215726",
+      "Alias": "DO1002215726",
+      "Type": "Nota",
+      "IssueDate": "2015-09-30",
+      "MaturityDate": "2022-09-30",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 2
+    }
+  },
+  {
+    "Id": "bc-DO1002215825",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002215825",
+      "Alias": "DO1002215825",
+      "Type": "Certificado",
+      "IssueDate": "2015-10-14",
+      "MaturityDate": "2022-10-14",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 1
+    }
+  },
+  {
+    "Id": "bc-DO1002216112",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002216112",
+      "Alias": "DO1002216112",
+      "Type": "Certificado",
+      "IssueDate": "2016-02-03",
+      "MaturityDate": "2023-02-03",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 5
+    }
+  },
+  {
+    "Id": "bc-DO1002216427",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002216427",
+      "Alias": "DO1002216427",
+      "Type": "Certificado",
+      "IssueDate": "2016-06-23",
+      "MaturityDate": "2023-06-23",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 5
+    }
+  },
+  {
+    "Id": "bc-DO1002216625",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002216625",
+      "Alias": "DO1002216625",
+      "Type": "Nota",
+      "IssueDate": "2016-09-15",
+      "MaturityDate": "2023-09-15",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 5
+    }
+  },
+  {
+    "Id": "bc-DO1002216724",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002216724",
+      "Alias": "DO1002216724",
+      "Type": "Nota",
+      "IssueDate": "2017-01-05",
+      "MaturityDate": "2024-01-05",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 5
+    }
+  },
+  {
+    "Id": "bc-DO1002217128",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002217128",
+      "Alias": "DO1002217128",
+      "Type": "Certificado",
+      "IssueDate": "2017-02-09",
+      "MaturityDate": "2024-02-09",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 5
+    }
+  },
+  {
+    "Id": "bc-DO1002217227",
+    "Issuer": "Banco Central",
+    "Bond": {
+      "ISIN": "DO1002217227",
+      "Alias": "DO1002217227",
+      "Type": "Nota",
+      "IssueDate": "2017-05-17",
+      "MaturityDate": "2024-05-17",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 10000,
+      "Currency": "DOP",
+      "CalculationMethod": 5
+    }
+  },
+  {
+    "Id": "mh-DO1005224220",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005224220",
+      "Alias": "DO1005224220",
+      "Type": "Bono",
+      "IssueDate": "2010-08-04",
+      "MaturityDate": "2017-08-04",
+      "CouponRate": 13.5,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005250829",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005250829",
+      "Alias": "DO1005250829",
+      "Type": "Bono",
+      "IssueDate": "2013-02-09",
+      "MaturityDate": "2018-02-09",
+      "CouponRate": 12.5,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005234526",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005234526",
+      "Alias": "DO1005234526",
+      "Type": "Bono",
+      "IssueDate": "2011-06-08",
+      "MaturityDate": "2018-06-08",
+      "CouponRate": 14.0,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005241026",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005241026",
+      "Alias": "DO1005241026",
+      "Type": "Bono",
+      "IssueDate": "2012-04-05",
+      "MaturityDate": "2019-04-05",
+      "CouponRate": 15.0,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005204115",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005204115",
+      "Alias": "DO1005204115",
+      "Type": "Bono",
+      "IssueDate": "2014-05-10",
+      "MaturityDate": "2019-05-10",
+      "CouponRate": 10.4,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005224329",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005224329",
+      "Alias": "DO1005224329",
+      "Type": "Bono",
+      "IssueDate": "2010-07-10",
+      "MaturityDate": "2020-07-10",
+      "CouponRate": 16.0,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005234625",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005234625",
+      "Alias": "DO1005234625",
+      "Type": "Bono",
+      "IssueDate": "2011-06-04",
+      "MaturityDate": "2021-06-04",
+      "CouponRate": 15.95,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005241125",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005241125",
+      "Alias": "DO1005241125",
+      "Type": "Bono",
+      "IssueDate": "2012-02-04",
+      "MaturityDate": "2022-02-04",
+      "CouponRate": 16.95,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005204719",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005204719",
+      "Alias": "DO1005204719",
+      "Type": "Bono",
+      "IssueDate": "2015-03-04",
+      "MaturityDate": "2022-03-04",
+      "CouponRate": 10.375,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005250928",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005250928",
+      "Alias": "DO1005250928",
+      "Type": "Bono",
+      "IssueDate": "2013-02-10",
+      "MaturityDate": "2023-02-10",
+      "CouponRate": 14.5,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005205914",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005205914",
+      "Alias": "DO1005205914",
+      "Type": "Bono",
+      "IssueDate": "2017-04-07",
+      "MaturityDate": "2023-04-07",
+      "CouponRate": 10.5,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005204214",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005204214",
+      "Alias": "DO1005204214",
+      "Type": "Bono",
+      "IssueDate": "2014-05-10",
+      "MaturityDate": "2024-05-10",
+      "CouponRate": 11.5,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005205112",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005205112",
+      "Alias": "DO1005205112",
+      "Type": "Bono",
+      "IssueDate": "2016-01-14",
+      "MaturityDate": "2026-01-14",
+      "CouponRate": 10.875,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005205013",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005205013",
+      "Alias": "DO1005205013",
+      "Type": "Bono",
+      "IssueDate": "2015-03-06",
+      "MaturityDate": "2026-03-06",
+      "CouponRate": 10.375,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005205310",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005205310",
+      "Alias": "DO1005205310",
+      "Type": "Bono",
+      "IssueDate": "2016-05-06",
+      "MaturityDate": "2026-11-06",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005205419",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005205419",
+      "Alias": "DO1005205419",
+      "Type": "Bono",
+      "IssueDate": "2016-06-04",
+      "MaturityDate": "2026-12-04",
+      "CouponRate": 11.0,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005205617",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005205617",
+      "Alias": "DO1005205617",
+      "Type": "Bono",
+      "IssueDate": "2016-08-05",
+      "MaturityDate": "2027-02-05",
+      "CouponRate": 11.25,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005251025",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005251025",
+      "Alias": "DO1005251025",
+      "Type": "Bono",
+      "IssueDate": "2013-02-04",
+      "MaturityDate": "2028-02-04",
+      "CouponRate": 18.5,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005252429",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005252429",
+      "Alias": "DO1005252429",
+      "Type": "Bono",
+      "IssueDate": "2013-05-05",
+      "MaturityDate": "2028-05-05",
+      "CouponRate": 13.5,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005204412",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005204412",
+      "Alias": "DO1005204412",
+      "Type": "Bono",
+      "IssueDate": "2014-07-06",
+      "MaturityDate": "2029-07-06",
+      "CouponRate": 11.375,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  },
+  {
+    "Id": "mh-DO1005206011",
+    "Issuer": "Ministerio de Hacienda",
+    "Bond": {
+      "ISIN": "DO1005206011",
+      "Alias": "DO1005206011",
+      "Type": "Bono",
+      "IssueDate": "2017-03-05",
+      "MaturityDate": "2032-03-05",
+      "CouponRate": 12.0,
+      "Frequency": 2,
+      "Denomination": 100000,
+      "Currency": "DOP",
+      "CalculationMethod": 3
+    }
+  }
+]
