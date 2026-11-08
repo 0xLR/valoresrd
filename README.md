@@ -24,12 +24,6 @@ Open http://localhost:8080. The runtime runs as the image's unprivileged `app` u
 
 ## What was preserved
 
-`src/ValoresRD/CalcBond.cs` is the original calculation engine, byte-for-byte, including its original algorithms and comments. Original SHA-256:
-
-```text
-16D7EEE71C930EE230825CBD8414CE5656E40155AF54F0ECC7C8297868C541C5
-```
-
 The original bond models and `CurrentBond.cs` remain for reference. Only unused framework-specific `using` directives were removed from the model files. The new API adapter constructs `Bono` directly to avoid ambiguous lookups in the historical catalog; it follows the original calculation sequence, including clean-price normalization, payment table generation, and duration calculation.
 
 The active application replaces the old IIS host, Windows Forms administration tool, and PHP frontend. There are no subscriber accounts, database writes, visitor tracking, or outgoing email in the restored application. The obsolete backend and frontend folders, deployment profiles, embedded credentials, vendored packages, and generated artifacts have been removed. The original calculation engine, reference models, and frontend theme are retained in `src/ValoresRD/`.
@@ -75,7 +69,7 @@ These equations describe the implementation in [`CalcBond.cs`](src/ValoresRD/Cal
 | $A$ | Accrued interest (`CuponCorrido`) |
 | $V,Q$ | Transaction value (`ValorTransado`) and clean purchase amount (`ValorCompra`) |
 | $p_c,p_d$ | Clean and dirty prices as ratios of nominal; multiply by 100 to display percentages |
-| $\operatorname{round}_q(x)$ | .NET `Math.Round(x, q)`, using midpoint-to-even rounding |
+| $\mathrm{round}_q(x)$ | .NET `Math.Round(x, q)`, using midpoint-to-even rounding |
 
 The issuer's name does not select a unique formula: `CalculationMethod` does. The current catalog has 14 Banco Central bonds using method 1, 28 using method 2, seven using method 5, and 21 Hacienda bonds stored as method 3 and adapted to method 4. The retained MHUSD, HAINA, DOMINICANPOWER, and REMIX models are not entries in this catalog. Their methods and repayment terms must come from their issue records; they cannot be inferred from the issuer alone.
 
@@ -116,8 +110,8 @@ This implementation assumes complete pairs and is principally suited to the semi
 For methods 2, 4, and 8, define $H_i$ as February 28 in the payment year, and the predicate
 
 $$
-E_i=\bigl[\operatorname{leap}(\operatorname{year}(t_i))\land t_i>H_i\bigr]
-\lor\bigl[\operatorname{leap}(\operatorname{year}(t_i-6\text{ months}))\land t_i<H_i\bigr].
+E_i=\bigl[\mathrm{leap}(\mathrm{year}(t_i))\land t_i>H_i\bigr]
+\lor\bigl[\mathrm{leap}(\mathrm{year}(t_i-6\text{ months}))\land t_i<H_i\bigr].
 $$
 
 Method 2 sets $B_i=366$ when $E_i$ is true and $i>1$; otherwise $B_i=365$. Methods 4 and 8 use February 28 of the **issue year** for $H_1$, and the payment-year date for subsequent periods. They set $B_i=366$ when $E_i$ is true, except that the first period uses 365 if issue is after $H_1$; otherwise they use 365. The fixed six-month lookback and these exceptions are historical code behavior, not a general Actual/Actual definition.
@@ -132,8 +126,8 @@ Accrued interest is rounded to cents before pricing:
 
 $$
 A=\begin{cases}
-\operatorname{round}_2\!\left(\dfrac{Nc\,a}{m\,d_k}\right),&\text{method 5},\\
-\operatorname{round}_2\!\left(\dfrac{Nc\,a}{B_k}\right),&\text{other methods}.
+\mathrm{round}_2\!\left(\dfrac{Nc\,a}{m\,d_k}\right),&\text{method 5},\\
+\mathrm{round}_2\!\left(\dfrac{Nc\,a}{B_k}\right),&\text{other methods}.
 \end{cases}
 $$
 
@@ -150,7 +144,7 @@ For method 4, the first discounted flow has accrued interest subtracted, so the 
 $$
 S_4(y)=\sum_{j=0}^{n-1}\frac{F_{k+j}}{z^{j+\alpha}}-A,
 \qquad
-V=N\operatorname{round}_6\!\left(\frac{S_4(y)}{N}\right)+A.
+V=N\mathrm{round}_6\!\left(\frac{S_4(y)}{N}\right)+A.
 $$
 
 Method 8 uses the same clean-amount treatment, but adds a hard-coded $1/184$ of a coupon period to the final flow's exponent:
@@ -166,8 +160,8 @@ The $j\ge1$ condition reflects the actual control flow: with just one remaining 
 Prices are then
 
 $$
-p_c=\operatorname{round}_q\!\left(\frac{V-A}{N}\right),\qquad
-p_d=\operatorname{round}_q\!\left(\frac{V}{N}\right),
+p_c=\mathrm{round}_q\!\left(\frac{V-A}{N}\right),\qquad
+p_d=\mathrm{round}_q\!\left(\frac{V}{N}\right),
 \qquad
 q=\begin{cases}6,&\text{methods 4 and 8},\\10,&\text{otherwise}.\end{cases}
 $$
