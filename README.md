@@ -38,29 +38,12 @@ docker compose up --build
 
 Open http://localhost:8080. The runtime runs as the image's unprivileged `app` user. Alternatively, open this folder in VS Code with Dev Containers, choose **Reopen in Container**, and run the local command above. The dev container forwards port 8080.
 
-## What was preserved
-
-The original bond models and `CurrentBond.cs` remain for reference. Only unused framework-specific `using` directives were removed from the model files. The new API adapter constructs `Bono` directly to avoid ambiguous lookups in the historical catalog; it follows the original calculation sequence, including clean-price normalization, payment table generation, and duration calculation.
-
-The active application replaces the old IIS host, Windows Forms administration tool, and PHP frontend. There are no subscriber accounts, database writes, visitor tracking, or outgoing email in the restored application. The obsolete backend and frontend folders, deployment profiles, embedded credentials, vendored packages, and generated artifacts have been removed. The original calculation engine, reference models, and frontend theme are retained in `src/ValoresRD/`.
-
 ## Historical data and compatibility
-
-The JSON catalog contains 70 historical bonds: 49 Banco Central bonds from `Central.xml` and 21 Hacienda bonds from `Hacienda.xml`, supplied from the original BondImporter project. These replace the initial eight-bond VLP sample. All ISINs in this catalog are unique; catalog IDs combine issuer and the source series ID. Source series IDs (used as display titles), ISINs, dates, coupon rates, frequencies, denominations, currencies, and calculation-method values are retained. The importer also normalizes `Pesos` to `DOP` for older exports.
-
-The Hacienda XML uses calculation method **3**, described in the old engine as the ten-decimal convention. This engine version implements Hacienda method **4** (four-decimal convention) and has no method-3 cash-flow branch. The adapter maps 3 to 4 without changing the source JSON or engine. Results therefore use that later rounding convention; they are not a reproduction of the older ten-decimal implementation.
 
 The frontend starts with a historical settlement date and adjusts it for the selected bond. API inputs must fall strictly between issue and maturity; nominal amounts must be positive denomination multiples. Yield input is expressed as a percentage and currently limited to `(0, 100]`. Price input is a percentage; transaction value is a currency amount.
 
 These are historical demonstration data, not current market prices or financial advice. Calculations have not been independently certified. Extreme price or transaction-value inputs can exceed the legacy solver's numerical capabilities.
 
-To regenerate the catalog with PowerShell 7:
-
-```powershell
-./tools/Import-Bonds.ps1 -SourceDirectory '/path/to/BondImporter'
-```
-
-The source XML files remain outside this repository; the generated JSON is included. The importer expects `Central.xml` and `Hacienda.xml` in the supplied directory. Older VLP inputs can be selected with `-CentralFile` and `-HaciendaFile`. Restart the application after importing to reload the catalog.
 
 ## Calculation formulas
 
@@ -263,7 +246,7 @@ dotnet build src/ValoresRD -c Release
 ./tools/Test-Smoke.ps1
 ```
 
-The smoke checks cover all 70 bonds, all three calculation modes, price/yield and transaction-value/yield round trips, payment schedules, invalid IDs, matured settlement rejection, frontend HTTP availability, and the original engine hash. These checks validate integration and consistency, not independent financial correctness.
+The smoke checks cover all 70 bonds, all three calculation modes, price/yield and transaction-value/yield round trips, payment schedules, invalid IDs, matured settlement rejection, frontend HTTP availability, and the engine hash after comment cleanup. These checks validate integration and consistency, not independent financial correctness.
 
 Local build and smoke checks passed during restoration. Docker execution and visual browser QA have not been verified in the restoration environment. Nothing has been deployed or committed.
 

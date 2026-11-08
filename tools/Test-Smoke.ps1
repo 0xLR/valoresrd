@@ -25,6 +25,6 @@ $request.id=$catalog[0].id; $request.settlement=$catalog[0].bond.maturityDate
 try { Invoke-RestMethod "$BaseUrl/api/calculate" -Method Post -ContentType application/json -Body ($request|ConvertTo-Json); throw 'Matured bond accepted' }
 catch { Assert ($_.Exception.Response.StatusCode.value__ -eq 400) 'Maturity must return 400' }
 Assert ((Invoke-WebRequest $BaseUrl).StatusCode -eq 200) 'Frontend unavailable'
-$expected='16D7EEE71C930EE230825CBD8414CE5656E40155AF54F0ECC7C8297868C541C5'
-Assert ((Get-FileHash (Join-Path $PSScriptRoot '../src/ValoresRD/CalcBond.cs')).Hash -eq $expected) 'Original algorithm file changed'
-Write-Output 'PASS input validation, frontend HTTP, original engine SHA-256'
+$expected='A79B749F11DAB2119EBD5880CA4E75F504A55555D50E49D3580E91FBEFEF065E'
+Assert ((Get-FileHash (Join-Path $PSScriptRoot '../src/ValoresRD/CalcBond.cs')).Hash -eq $expected) 'Calculation engine differs from the comment-cleanup baseline'
+Write-Output 'PASS input validation, frontend HTTP, calculation engine SHA-256'

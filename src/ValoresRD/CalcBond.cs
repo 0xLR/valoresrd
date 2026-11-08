@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Linq;
 
@@ -49,7 +49,6 @@ namespace CalcBond
         public double PrecioSucio { get; private set; }
         public int DiasAVencimiento { get; private set; }
         public double MacaulayDuration { get; private set; }
-        //private int i = 0;
         private DataTable PaymentsTable { get; set; }
         private bool ContainsError { get; set; }
         private string ErrorMessage { get; set; }
@@ -104,8 +103,6 @@ namespace CalcBond
             SetValorPresenteFlujos();
             SetValorTransado();
             SetPreciosLimpioYSucio();
-            //GenerateDataTable();
-            //SetMacaulayDuration();
         }
 
         public void CalcularPorValorTransado(double valorTrans)
@@ -115,8 +112,6 @@ namespace CalcBond
             SetDiasAVencimiento();
             SetPreciosLimpioYSucio();
             CalculateRendimiento();
-            //GenerateDataTable();
-            //SetMacaulayDuration();
         }
 
         public void CalcularPorPrecioLimpio(double precLimpio)
@@ -128,8 +123,6 @@ namespace CalcBond
             ValorCompra = ValorTransado - CuponCorrido;
             SetPrecioSucio();
             CalculateRendimiento();
-            //GenerateDataTable();
-            //SetMacaulayDuration();
         }
 
         private string GetCalcType()
@@ -193,21 +186,14 @@ namespace CalcBond
             if (Calctype == 4 || Calctype == 8)
             {
                 p = (pmtsRemaining - 1);
-                PaymentsTable.Rows[p][4] = (/*(ValorNominal) +*/ Math.Round((MontoPago[p + (NumeroPago)]), 2)).ToString("0,0.00");
-                PaymentsTable.Rows[p][5] = ((ValorPresenteFlujos[pmtsRemaining-1]) /*+ Math.Round((ValorPresenteFlujos[p]), 2)*/).ToString("0,0.00");
+                PaymentsTable.Rows[p][4] = ( Math.Round((MontoPago[p + (NumeroPago)]), 2)).ToString("0,0.00");
+                PaymentsTable.Rows[p][5] = ((ValorPresenteFlujos[pmtsRemaining-1]) ).ToString("0,0.00");
                 p = (pmtsRemaining);
                 PaymentsTable.Rows.Add();
             }
-            //if (Calctype == 1 || Calctype == 2 || Calctype == 5 || Calctype == 7 || Calctype == 6)
             else
             {
-                //PaymentsTable.Rows.Add();
-                //PaymentsTable.Rows[pmtsRemaining][0] = (pmtsRemaining).ToString();
-                //PaymentsTable.Rows[pmtsRemaining][1] = PaymentsTable.Rows[pmtsRemaining - 1][1];
-                //PaymentsTable.Rows[pmtsRemaining][3] = PaymentsTable.Rows[pmtsRemaining - 1][3];
-                //PaymentsTable.Rows[pmtsRemaining][4] = (ValorNominal).ToString("0,0.00");
-                //PaymentsTable.Rows[pmtsRemaining][5] = (ValorPresenteFlujos[pmtsRemaining-1]).ToString("0,0.00");
-                p = pmtsRemaining /*+ 1*/;
+                p = pmtsRemaining ;
                 // sum of the present values of the payments
                 PaymentsTable.Rows.Add();
                 PaymentsTable.Rows[p][5] = (ValorPresenteTotal).ToString("0,0.00");
@@ -583,7 +569,6 @@ namespace CalcBond
         private void SetValorPresenteFlujos()
         {
             int i;            
-            //ValorPresenteFlujos = new double[pmtsRemaining + 1];
             ValorPresenteFlujos = new double[pmtsRemaining];
             
             if (Calctype == 4 || Calctype == 8)
@@ -608,7 +593,6 @@ namespace CalcBond
                 }                
                 i++;
             }
-            //ValorPresenteFlujos[pmtsRemaining] = ValorNominal / (Math.Pow((1 + rendimientoPeriodo), ((pmtsRemaining - 1) + RatioCupon)));
             ValorPresenteTotal = ValorPresenteFlujos.Sum();
             SetEquationValorPresenteFlujos();
         }
@@ -704,11 +688,7 @@ namespace CalcBond
                 total += MontoPago[n];
                 n++;
             }
-
-            //if (Calctype == 1 || Calctype == 2 || Calctype == 5 || Calctype == 4 || Calctype == 8)
-            //{
             total += ValorNominal;
-            //}
 
             double diff = total - ValorTransado;
 
@@ -720,7 +700,6 @@ namespace CalcBond
             else
             {
                 double multiple = (1.00 / PrecioLimpio);
-                //y = (TasaCupon / Periocidad) + 1;
                 y = ((TasaCupon*multiple) / Periocidad) + 1;
             }
             // Determine if security is Ministerio de Hacienda with one payment remaining
