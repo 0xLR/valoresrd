@@ -1,6 +1,22 @@
 # ValoresRD
 
-A restored C# bond calculator originally built around 2018 with ASP.NET Web API on .NET Framework 4.6.1, SQL Server, and a separately hosted PHP frontend. This edition runs as a single ASP.NET Core application with a JSON catalog. The frontend reuses the original HTML layout, Bootstrap/Lux theme, custom CSS, calculation radio buttons, and results tables, connected to the new API through plain JavaScript. Original analytics and obsolete remote API calls are omitted.
+ValoresRD is a C# calculator for bonds issued in the Dominican Republic. Originally built around 2018, it was designed to give trading firms an affordable alternative to subscribing to Bloomberg Terminal solely to compute valuations of securities in their portfolios. It calculates prices, yields, accrued interest, and payment cash flows for supported bond conventions.
+
+The original application used ASP.NET Web API on .NET Framework 4.6.1, SQL Server, and a separately hosted PHP frontend. This restored edition runs as a single ASP.NET Core application with a historical JSON catalog. The frontend reuses the original HTML layout, Bootstrap/Lux theme, custom CSS, calculation radio buttons, and results tables, connected to the new API through plain JavaScript. Original analytics and obsolete remote API calls are omitted. The historical calculation engine is preserved, with its limitations documented below.
+
+## Screenshots
+
+Select a Dominican bond, settlement date, nominal amount, and calculation input.
+
+![Bond calculator with Banco Central selected and calculation by yield](docs/screenshots/bond-calculator.png)
+
+Review the valuation, including clean and dirty prices, yield, and accrued interest.
+
+![Valuation results for a historical Banco Central certificate](docs/screenshots/valuation-results.png)
+
+Inspect the payment schedule and present value of each cash flow.
+
+![Payment schedule showing coupon payments, principal repayment, and present values](docs/screenshots/payment-schedule.png)
 
 ## Run locally
 
