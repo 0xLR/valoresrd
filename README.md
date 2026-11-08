@@ -161,10 +161,10 @@ Prices are then
 
 $$
 p_c=\mathrm{round}_q\!\left(\frac{V-A}{N}\right),\qquad
-p_d=\mathrm{round}_q\!\left(\frac{V}{N}\right),
-\qquad
-q=\begin{cases}6,&\text{methods 4 and 8},\\10,&\text{otherwise}.\end{cases}
+p_d=\mathrm{round}_q\!\left(\frac{V}{N}\right).
 $$
+
+Use $q=6$ for methods 4 and 8, and $q=10$ for all other methods.
 
 Six decimal places in a **price ratio** correspond to four decimal places in the displayed percentage price.
 
