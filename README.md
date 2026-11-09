@@ -236,20 +236,6 @@ $$
 
 This is not the standard present-value-weighted time-to-payment definition of Macaulay duration, and its displayed value should not be treated as a verified duration in years. It does not feed back into price or yield calculations.
 
-## Verify
-
-With the application running on port 5080:
-
-```powershell
-dotnet build src/ValoresRD -c Release
-# In another terminal: dotnet run --project src/ValoresRD --urls http://localhost:5080
-./tools/Test-Smoke.ps1
-```
-
-The smoke checks cover all 70 bonds, all three calculation modes, price/yield and transaction-value/yield round trips, payment schedules, invalid IDs, matured settlement rejection, frontend HTTP availability, and the engine hash after comment cleanup. These checks validate integration and consistency, not independent financial correctness.
-
-Local build and smoke checks passed during restoration. Docker execution and visual browser QA have not been verified in the restoration environment. Nothing has been deployed or committed.
-
 ## Layout
 
 ```text
@@ -259,6 +245,3 @@ src/ValoresRD/wwwroot/   Static single-page frontend
 tools/                  XML import and smoke checks
 .devcontainer/          Linux development environment
 ```
-
-Before publishing, review the source and data, and choose an appropriate license. Any credentials formerly embedded in the old project should be rotated if still active.
-
